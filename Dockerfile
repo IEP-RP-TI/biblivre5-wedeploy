@@ -14,6 +14,6 @@ ENTRYPOINT echo "listen_addresses = '*'" >> /etc/postgresql/9.6/main/postgresql.
 &&	su postgres -c "psql -U postgres -f /tmp/sql/biblivre4.sql -d biblivre4" \
 && catalina.sh run
 
-VOLUME /var/lib/postgresql/9.6/main
+
 
 EXPOSE 8080
